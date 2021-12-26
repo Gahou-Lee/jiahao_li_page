@@ -1,0 +1,119 @@
+.pagehead {
+  position:relative;
+  float:left;
+  width:100%;
+  background-color:black;
+}
+
+.pagelogo {
+  position:absolute;
+  width:135px;
+  height:100%;
+  margin:0;
+  color:white;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-right:1px solid gray;
+}
+
+.pagelogo:hover {
+  background-image:linear-gradient(20deg, #0ff, #0f0);
+  color:black;
+}
+
+.dropmenu {
+  width:calc(100% - 135px);
+  margin-left:135px;
+}
+
+.dropdown {
+  float:left;
+  position:relative;
+  cursor:pointer;
+}
+
+.dropdown#movetail {
+  float:right;
+}
+
+.dropbutn {
+  margin:0;
+  padding:15px 0;
+  width:135px;
+  height:20px;
+  color:white;
+  font-size:16px;
+  text-align:center;
+}
+
+.dropdown-content {
+  position:absolute;
+  height:0;
+  width:100%;
+  border-radius:10px;
+  color:yellow;
+  background-image:linear-gradient(to left, black, lightgray);
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+  overflow:hidden;
+  transition:height 1s;
+  z-index:1;
+}
+
+.dropdown-content-item {
+  position:relative;
+  padding:0;
+}
+
+.dropdown-content-mask {
+  width:0;
+  height:20px;
+  padding:10px 0;
+  border-radius:10px;
+  transition:width 1s;
+  background-image:linear-gradient(to right, gold, white);
+}
+
+.dropdown-content-icon {
+  position:absolute;
+  top:10px;
+  padding-left:10px;
+  display:none;
+}
+
+.dropdown-content-text {
+  position:absolute;
+  top:10px;
+  padding:0 20px;
+}
+
+.dropdown:hover .dropbutn {
+  background-image:linear-gradient(20deg, #0ff, #0f0);
+  color:black;
+}
+
+.dropdown:hover .dropdown-content {
+  height:80px;
+}
+
+.dropdown-content:hover .dropdown-content-item {
+  opacity:0.7;
+}
+
+.dropdown-content:hover .dropdown-content-item:hover {
+  opacity:1.0;
+}
+
+.dropdown-content:hover .dropdown-content-item:hover .dropdown-content-mask {
+  width:100%;
+  color:black;
+}
+
+.dropdown-content:hover .dropdown-content-item:hover .dropdown-content-icon {
+  display:inline;
+}
+
+.dropdown-content:hover .dropdown-content-item:hover .dropdown-content-text {
+  right:0;
+}

@@ -1,0 +1,59 @@
+.skipover-content {
+  float:left;
+  position:relative;
+  width:135px;
+  height:calc(100% - 80px);
+  color:white;
+  background-image:linear-gradient(to left, black, lightgray);
+  overflow:auto;
+}
+
+.skipover-content-item {
+  position:relative;
+  width:100%;
+  padding:0;
+  cursor:pointer;
+}
+
+.skipover-content-mask {
+  width:0;
+  height:20px;
+  padding:10px 0;
+  border-radius:10px;
+  transition:width 1s;
+  background-image:linear-gradient(to right, gold, white);
+}
+
+.skipover-content-icon {
+  position:absolute;
+  top:10px;
+  padding-left:10px;
+  display:none;
+}
+
+.skipover-content-text {
+  position:absolute;
+  top:10px;
+  padding:0 20px;
+}
+
+.skipover-content:hover .skipover-content-item {
+  color:yellow;
+}
+
+.skipover-content:hover .skipover-content-item:hover {
+  opacity:1.0;
+}
+
+.skipover-content:hover .skipover-content-item:hover .skipover-content-mask {
+  width:100%;
+  color:black;
+}
+
+.skipover-content:hover .skipover-content-item:hover .skipover-content-icon {
+  display:inline;
+}
+
+.skipover-content:hover .skipover-content-item:hover .skipover-content-text {
+  right:0;
+}

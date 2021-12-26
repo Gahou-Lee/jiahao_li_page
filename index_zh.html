@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+<title>Jiahao Li's page</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./CSS/pagehead.css">
+<link rel="stylesheet" href="./CSS/pagefoot.css">
+<link rel="stylesheet" href="./CSS/pageleft.css">
+<link rel="stylesheet" href="./CSS/pagerest.css">
+<script src="./JS/pagebody.js"></script>
+</head>
+<body style="height:100%;margin:0">
+<div class="pagehead">  
+  <div class="pagelogo">欢迎!</div>
+  <div class="dropmenu">
+    <div class="dropdown">
+      <div class="dropbutn">开始</div>
+      <div class="dropdown-content">
+        <div class="dropdown-content-item" id="headToResume">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">简介</div>
+          </div>
+        </div>
+        <div class="dropdown-content-item" id="headToNews">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">新闻</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbutn">发表</div>
+      <div class="dropdown-content">
+        <div class="dropdown-content-item" id="headToPapers">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">论文</div>
+          </div>
+        </div>
+        <div class="dropdown-content-item" id="headToPatents">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">专利</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbutn">项目</div>
+      <div class="dropdown-content">
+        <div class="dropdown-content-item" id="headToNetLabX">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">NetLabX</div>
+          </div>
+        </div>
+        <div class="dropdown-content-item" id="headToEDAvSys">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">EDA vSys</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown" id="movetail">
+      <div class="dropbutn">语言</div>
+      <div class="dropdown-content">
+        <div class="dropdown-content-item" id="jumpToEn">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">English</div>
+          </div>
+        </div>
+        <div class="dropdown-content-item" id="jumpToZh">
+          <div class="dropdown-content-mask">
+            <div class="dropdown-content-icon">-></div>
+            <div class="dropdown-content-text">中文</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="skipover-content">
+  <div class="skipover-content-item" id="leftToResume">
+    <div class="skipover-content-mask">
+      <div class="skipover-content-icon">-></div>
+      <div class="skipover-content-text">简介</div>
+    </div>
+  </div>
+  <div class="skipover-content-item" id="leftToPapers">
+    <div class="skipover-content-mask">
+      <div class="skipover-content-icon">-></div>
+      <div class="skipover-content-text">论文</div>
+    </div>
+  </div>
+  <div class="skipover-content-item" id="leftToPatents">
+    <div class="skipover-content-mask">
+      <div class="skipover-content-icon">-></div>
+      <div class="skipover-content-text">专利</div>
+    </div>
+  </div>
+  <div class="skipover-content-item" id="leftToNetLabX">
+    <div class="skipover-content-mask">
+      <div class="skipover-content-icon">-></div>
+      <div class="skipover-content-text">NetLabX</div>
+    </div>
+  </div>
+  <div class="skipover-content-item" id="leftToEDAvSys">
+    <div class="skipover-content-mask">
+      <div class="skipover-content-icon">-></div>
+      <div class="skipover-content-text">EDA vSys</div>
+    </div>
+  </div>
+  <div class="skipover-content-item" id="leftToNews">
+    <div class="skipover-content-mask">
+      <div class="skipover-content-icon">-></div>
+      <div class="skipover-content-text">新闻</div>
+    </div>
+  </div>
+</div>
+
+<div class="pagerest">
+  <img class="portrait" id="Resume" alt="portrait" src="./IMAGES/portrait.jpg">
+  <div class="username">李嘉豪</div>
+  <div class="blocktxt">
+    我于 2016 年本科毕业于广东工业大学，并于 2019 年硕士毕业于广东工业大学。
+    攻读硕士期间，我在蔡瑞初教授的指导下，主要研究迁移学习和深度学习。
+    目前，我正在开发一款名叫 NetLabX 的软件用于可视化构建计算图。
+  </div>
+  <div class="headline" id="Papers">论文</div>
+  <ol class="blocktxt">
+    <li>Cai R, Li J, Zhang Z, et al. DACH: Domain Adaptation Without Domain Information[J]. IEEE Transactions on Neural Networks and Learning Systems, 2020. (SCI一区, JCR一区)</li>
+    <li>蔡瑞初, 李嘉豪, 郝志峰. 基于类内最大均值差异的无监督领域自适应算法[J]. 计算机应用研究, 2020, 37(8):5. (北大中文核心)</li>
+  </ol>
+  <div class="headline" id="Patents">专利</div>
+  <ol class="blocktxt">
+    <li>李嘉豪, 蔡瑞初, 温雯,等. 一种基于同态神经网络的跨领域图片分类方法, CN107392242A[P] (已授权).</li>
+  </ol>
+  <div class="headline" id="NetLabX">NetLabX</div>
+  <video controls="controls" autoplay="autoplay">
+    <source src="./VIDEOS/NetLabX.webm" type="video/webm" />
+  </video>
+  <div class="blocktxt">
+    NetLabX 是一款开发中的软件。某些可表征为节点系统的模型都可通过这款软件来搭建。
+    目前这款软件只具备最基本的功能，用于构建计算图。更多功能如解释和路由因处于开发状态依然不可用。
+  </div>
+  <div class="headline" id="EDAvSys">EDA vSys</div>
+  <video controls="controls" autoplay="autoplay">
+    <source src="./VIDEOS/EDAvSys.webm" type="video/webm" />
+  </video>
+  <div class="blocktxt">
+    EDA vSys 是一款用于数字电路仿真的软件。它为用户提供了一个可视化构建数字电路的环境。
+    此外，在 EDA vSys 中，用户可以很方便地观察数字电路的动态变化。
+  </div>
+  <div class="headline" id="News">News</div>
+  <div class="blocktxt">
+    无数据。
+  </div>
+</div>
+
+<div class="pagefoot">
+  本人保留所有权利。
+</div>
+</body>
+</html>

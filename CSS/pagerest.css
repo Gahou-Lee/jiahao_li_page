@@ -1,0 +1,37 @@
+.pagerest {
+  width:calc(100% - 135px);
+  overflow:auto;
+}
+
+.portrait {
+  width:116px;
+  height:162px;
+  margin:10px auto;
+  display:block;
+}
+
+.username {
+  text-align:center;
+  display:block;
+}
+
+.blocktxt {
+  width:90%;
+  padding:16px 0;
+  margin:auto 5%;
+  text-align:justify;
+  display:block;
+}
+
+.headline {
+  font-size:20px;
+  text-align:center;
+  display:block;
+  color:white;
+  background-image:linear-gradient(to left,lightgray, black);
+}
+
+video {
+  width:90%;
+  margin:10px 5%;
+}
