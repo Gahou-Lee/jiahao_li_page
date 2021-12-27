@@ -35,6 +35,11 @@ window.onload = function() {
   destobjt = document.getElementById("Patents");
   addEventScroller(leftobjt, destobjt);
   addEventScroller(headobjt, destobjt);
+  headobjt = document.getElementById("headToAwards");
+  leftobjt = document.getElementById("leftToAwards");
+  destobjt = document.getElementById("Awards");
+  addEventScroller(leftobjt, destobjt);
+  addEventScroller(headobjt, destobjt);
   headobjt = document.getElementById("headToNetLabX");
   leftobjt = document.getElementById("leftToNetLabX");
   destobjt = document.getElementById("NetLabX");
