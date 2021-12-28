@@ -1,16 +1,16 @@
 function addEventJumpTo(sorcobjt, destjump) {
-  sorcobjt.addEventListener("click", function() {
+  sorcobjt.addEventListener("click", () => {
     window.location = destjump;
   });
 }
 
 function addEventScroller(sorcobjt, destobjt) {
-  sorcobjt.addEventListener("click", function() {
+  sorcobjt.addEventListener("click", () => {
     destobjt.scrollIntoView();
   });
 }
 
-window.onresize = function() {
+window.onresize = () => {
   pagehead = document.getElementsByClassName("pagehead")[0];
   pagefoot = document.getElementsByClassName("pagefoot")[0];
   pagerest = document.getElementsByClassName("pagerest")[0];
@@ -19,7 +19,8 @@ window.onresize = function() {
   skipover.style.height = window.innerHeight - pagehead.offsetHeight - pagefoot.offsetHeight +"px";
 }
 
-window.onload = function() {
+window.onload = () => {
+  window.addEventListener("resize", window.onresize); // window.onresize may not work
   headobjt = document.getElementById("headToResume");
   leftobjt = document.getElementById("leftToResume");
   destobjt = document.getElementById("Resume");

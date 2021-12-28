@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = () => {
   if (window.navigator.systemLanguage == "zh-cn"
   || (window.navigator.language == "zh-CN")) {
     window.location = "./index_zh.html";
